@@ -1,8 +1,13 @@
+/* Estilo geral do corpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Espaço para o navbar fixo */
 }
 
+/* Estilo do cabeçalho */
 header {
     background-color: #28a745;
     color: white;
@@ -10,6 +15,7 @@ header {
     text-align: center;
 }
 
+/* Estilo das seções */
 section {
     background-color: #ffffff;
     padding: 20px;
@@ -24,6 +30,7 @@ section {
     gap: 15px;
 }
 
+/* Estilo das imagens nas seções */
 section img {
     width: 100%;
     max-width: 150px;
@@ -31,35 +38,49 @@ section img {
     border-radius: 10px;
 }
 
+/* Classe para animação de fade-in */
 .fade-in {
     opacity: 1;
     transform: translateY(0);
 }
 
+/* Estilo dos títulos h2 */
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 0; /* Remover margem superior para h2 */
 }
 
+/* Estilo do rodapé */
 footer {
     background-color: #28a745;
     padding: 20px;
     text-align: center;
 }
 
+/* Estilo do botão de sucesso */
 .btn-success {
     font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
+    color: white; /* Garantir que o texto do botão seja legível */
+    text-decoration: none; /* Remover sublinhado do link */
 }
 
+/* Efeito hover para o botão de sucesso */
 .btn-success:hover {
     background-color: #218838;
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo dos parágrafos */
+p {
+    line-height: 1.6; /* Aumentar o espaçamento entre linhas para melhor legibilidade */
+}
+
+/* Estilo para o carrossel de depoimentos */
 .carousel-inner p {
     font-style: italic;
     font-size: 1.2rem;
@@ -84,4 +105,19 @@ footer {
         font-size: 1rem;
         padding: 8px 16px;
     }
+}
+
+/* Estilo para listas ordenadas */
+ol {
+    padding-left: 20px; /* Adicionar espaçamento à esquerda para listas */
+}
+
+/* Estilo para links */
+a {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
